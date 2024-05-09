@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ORDER MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    <h1>Welcome to the Canteen!</h1>
+    <h2>Below are the prices:</h2>
+    <ul>
+        <li>Fishball - 30 pesos</li>
+        <li>Kikiam - 40 pesos</li>
+        <li>Corndog - 50 pesos</li>
+    </ul>
+    
+    <form method="post" action="items.php">
+        <label for="item">Choose your order:</label>
+        <select name="item" id="item">
+            <option value="Fishball">Fishball</option>
+            <option value="Kikiam">Kikiam</option>
+            <option value="Corndog">Corndog</option>
+        </select><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity"><br><br>
+        
+        <label for="cash">Cash:</label>
+        <input type="number" name="cash" id="cash"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
